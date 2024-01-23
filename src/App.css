@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.363)), url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-container{
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.inner-child{
+  width: 60%;
+  min-height: 70vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.623);
+
+}
+.left-container{
+  width: 70%;
+  min-height: 70vh;
+  background-color: rgba(240, 255, 255, 0.397);
+  background-image: url(./images/city.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.top-left{
+  text-align: right;
+  padding: 20px;
+  color: whitesmoke;
+}
+.bottom-left{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.temp-left h1{
+  font-size: 55px;
+  font-weight: 400;
+}
+.bottom-left h1{
+  font-size: 45px;
+  font-weight: 400;
+}
+.top-left h1{
+  font-size: 45px;
+}
+.bottom-left p{
+  font-size: 25px;
+}
+.right-container{
+  width: 30%;
+  padding: 10px;
+}
+.logo-container{
+  text-align: center;
+}
+hr{
+  width: 80%;
+  margin: auto;
+}
+.right-container h1{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.middle-right input{
+  width: 80%;
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 3px solid aliceblue;
+  background: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.middle-right{
+  text-align: center;
+}
+.weather-info{
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-stats div{
+  color: white;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  padding-top: 20px;
+
+}
+.weather-icon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.forecast-container{
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(12, 12, 14, 0.973);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.363)), url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  
+}
+.forecast-name{
+  font-size: 40px;
+  color: rgba(211, 206, 206, 0.918);
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.514);
+
+}
+.forecast-name hr{
+  width: 50%;
+  height: 5px;
+  background-color:rgba(211, 206, 206, 0.856);
+  border: 2px solid rgba(211, 206, 206, 0.856);
+  
+}
+.days-container{
+  min-height: 30vh;
+  width: 60%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.61)), url("./images/sunset3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  gap: 30px;
+  padding: 20px;
+}
+.days-container div{
+  width: 200px;
+  padding: 20px;
+  height: 250px;
+  text-align: center;
+  color: rgba(221, 218, 218, 0.884);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgba(12, 12, 14, 0.708);
+  border-radius: 10px;
+}
+
+.tabBar{
+  background-color: rgba(24, 24, 24, 0.648);
+  padding: 20px;
+}
+
+.tabBar button{
+  width: 150px;
+  height: 40px;
+  background: none;
+  background-color: rgb(226, 83, 31);
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
 }
